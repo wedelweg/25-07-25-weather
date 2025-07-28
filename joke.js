@@ -100,7 +100,7 @@ async function fetchCitySuggestions(query) {
     try {
         const res = await fetch(url, {
             headers: {
-                "User-Agent": "weather-joke-app/1.0" // важно для Nominatim
+                "User-Agent": "weather-joke-app/1.0"
             }
         });
         if (!res.ok) throw new Error("Nominatim request failed");
